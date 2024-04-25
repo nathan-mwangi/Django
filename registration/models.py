@@ -11,7 +11,8 @@ class Student(models.Model):
 
 
 
-   class Students(models.Model):
-     Name  = models.CharField(max_length=100)
-     Age = models.IntegerField(null=False,blank=False)
-     Email = models.EmailField(unique=True)
+class Pupils(models.Model):
+    Name = models.CharField(max_length=100)
+    Age = models.IntegerField(null=False, blank=False)
+    Email = models.EmailField(unique=True)
+
