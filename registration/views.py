@@ -56,6 +56,7 @@ def addstudent(request):
 def editstudent(request, id):
     data = Pupils.objects.get(id=id),
     context = {'data': data}
+    print(context)
     return render(request, 'updatestudent.html',context)
 
 
@@ -73,6 +74,7 @@ def updatestudent(request, id):
      editstudent.save()
      data = Pupils.objects.all()
      context = {'data': data}
+     print(context)
      return render(request, 'Register.html', context)
 
 def deletestudent(request,id):

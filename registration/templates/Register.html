@@ -46,16 +46,16 @@
       </tr>
     </thead>
      <tbody>
-        {% for student in data %}
+        {% for Pupils in data %}
             <tr>
-                <td>{{ student.Name }}</td>
-                <td>{{ student.Email }}</td>
-                <td>{{ student.Age }}</td>
+                <td>{{ Pupils.Name }}</td>
+                <td>{{ Pupils.Email }}</td>
+                <td>{{ Pupils.Age }}</td>
                 <td>
-                     <a href="/editstudent/{{ student.id }}" type="button" class="btn btn-outline-success">Edit</a>
+                     <a href="/editstudent/{{ Pupils.id }}" type="button" class="btn btn-outline-success">Edit</a>
                 </td>
                 <td>
-                     <a href="/deletestudent/{{ student.id }}" type="button" class="btn btn-outline-danger">Delete</a>
+                     <a href="/deletestudent/{{ Pupils.id }}" type="button" class="btn btn-outline-danger">Delete</a>
                 </td>
             </tr>
         {% endfor %}
